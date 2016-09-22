@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html lang="en" ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>Studio Fifteen</title>
+		
+		<!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		
+		<!-- Angular -->
+		<script src="./plungins/angularjs/angular.min.js"></script>
+		<script src="./plungins/angularjs/angular-route.min.js"></script>
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="./plungins/bootstrap/css/bootstrap.min.css">
+		<script src="./plungins/bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		
+		<!-- Style -->
+		<link rel="stylesheet" href="./assets/css/main.css">
+	</head>
+	<body>
+
+		<header id="header" class="header navbar-fixed-top" ng-include="'views/includes/header.html'" ng-controller="HeaderController"></header>
+		
+		<main>
+			<div ng-view></div>
+		</main>
+
+		<footer ng-include="'views/includes/footer.html'"></footer>
+		
+		<!-- Config -->
+		<script src="./config.js"></script>
+		<!-- Modules -->
+		<script src="./modules.js"></script>
+		<!-- Routes -->
+		<script src="./routes.js"></script>
+
+		<!-- Controllers -->
+		<script src="./controllers/HeaderController.js"></script>
+	</body>
+</html>
